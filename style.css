@@ -70,7 +70,12 @@ font-family: "Oswald", serif;
     font-style: normal;
   }
   
-
+  .carousel-container {
+    background-color: rgba(0, 0, 0, 0.637); 
+    padding: 15px; 
+    width: 100%;
+  
+  }
 .gif-responsive {
     max-width: 80%;
     height: auto;
@@ -95,4 +100,8 @@ font-family: "Oswald", serif;
     text-align: center;
     background-color: none;
     border: none;
+  }
+  .footer{
+    background-color:rgba(0, 0, 0, 0.637); 
+    width: 100%;
   }
