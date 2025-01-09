@@ -141,3 +141,36 @@ font-family: "Oswald", serif;
         }
     }
 }
+/* Ajustes para la sección de Contact */
+@media (max-width: 768px) {
+    /* Asegura que los íconos de contacto se apilen correctamente */
+    .icono {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los iconos se ajusten a varias filas */
+        justify-content: center;
+        gap: 20px; /* Espacio entre los iconos */
+    }
+
+    .btn-nbg img {
+        width: 40px; /* Ajuste de tamaño de los iconos */
+        height: 40px;
+        margin: 10px; /* Espacio alrededor de cada icono */
+    }
+
+    /* Ajustamos para que los iconos de contacto se acomoden en una fila adecuada */
+    .btn-nbg {
+        flex: 0 0 25%; /* Para que haya 4 iconos por fila */
+    }
+    
+    /* Si la pantalla es más pequeña, acomodamos los iconos en una sola columna */
+    @media (max-width: 480px) {
+        .btn-nbg {
+            flex: 0 0 50%; /* Para 2 iconos por fila */
+        }
+
+        .btn-nbg img {
+            width: 50px; /* Aumentamos un poco el tamaño de los iconos */
+            height: 50px;
+        }
+    }
+}
