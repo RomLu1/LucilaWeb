@@ -78,9 +78,11 @@ font-family: "Oswald", serif;
   }
 .gif-responsive {
     max-width: 80%;
+    display: block;
     height: auto;
     border-radius: 10px;
-   margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boton{
@@ -100,8 +102,42 @@ font-family: "Oswald", serif;
     text-align: center;
     background-color: none;
     border: none;
+    cursor: pointer; 
+     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el movimiento */
+  }
+  .btn-nbg:hover{
+    transform: translateY(-10px); /* Mueve el botón hacia arriba */
   }
   .footer{
     background-color:rgba(0, 0, 0, 0.637); 
     width: 100%;
   }
+
+  /* Ajustes para la sección de Skills */
+@media (max-width: 768px) {
+    /* Aseguramos que los íconos se apilen en columnas en pantallas pequeñas */
+    .icono {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas */
+        justify-content: center;
+        gap: 15px; /* Espacio entre los íconos */
+    }
+
+    .icono-img {
+        width: 50px;  /* Ajuste de tamaño de los íconos */
+        height: 50px;
+        margin: 5px;
+    }
+    
+    /* Asegura que los íconos de Skills se centren correctamente en dispositivos pequeños */
+    .icono-img {
+        flex: 0 0 20%; /* Para que se acomoden en 5 íconos por fila */
+    }
+
+    /* Si hay más de 5 íconos, ajustamos a 4 por fila */
+    @media (max-width: 480px) {
+        .icono-img {
+            flex: 0 0 25%; /* Para 4 íconos por fila */
+        }
+    }
+}

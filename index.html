@@ -20,14 +20,14 @@
     <div class="relative-container">
         <nav class="navbar navbar-expand-lg customNavBar">
             <div class="container-fluid">
-                <a class="navbar-brand fuenteTitulo" href="#aboutme">About me</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav mx-auto">
+                        <a class="navbar-brand fuenteTitulo" href="#aboutme">About me</a>
                         <a class="navbar-brand fuenteTitulo" href="#myprojects">My projects</a>
                         <a class="navbar-brand fuenteTitulo" href="#skills">Skills</a>
                         <a class="navbar-brand fuenteTitulo" href="#contact">Contact</a>
@@ -38,12 +38,12 @@
 
 
         <div class="container" id="aboutme">
-            <h1 class="font-color fuenteTitulo" style="margin-left: 140px; font-size: 50px;">Romeo Lucila</h1>
+            <h1 class="font-color fuenteTitulo" style="font-size: 2.5rem; text-align: center;">Romeo Lucila</h1>
             <p class="center-container font-color fuenteTexto">
                 I’m a Video Game and Frontend Developer from Buenos Aires, Argentina. I’ve developed games using Unity
-                 and worked with frontend technologies like HTML, CSS, and JavaScript. I’ve worked on various
-                projects, including 2D and 3D games and websites. I enjoy creating user-friendly experiences and am always
-                eager to learn more.
+                and worked with frontend technologies like HTML, CSS, and JavaScript. I’ve worked on various projects,
+                including 2D and 3D games and websites. I enjoy creating user-friendly experiences and am always eager
+                to learn more.
             </p>
         </div>
 
@@ -51,24 +51,20 @@
             <h2 class="center-container font-color fuenteTitulo">MY PROJECTS</h2>
         </div>
 
-
-        <div class=" my-5 carousel-container">
+        <div class="my-5 carousel-container">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
                     <div class="carousel-item active zPosition">
                         <div class="row align-items-center">
-
-                            <div class="col-md-6 text-center">
+                            <div class="col-12 col-md-6 text-center">
                                 <img src="Imagenes/CF.gif" alt="GIF 1" class="gif-responsive">
                             </div>
-
-                            <div class="col-md-5 text-container">
+                            <div class="col-12 col-md-5 text-container">
                                 <h3 class="font-color fuenteTitulo">COLOR SHIFT</h3>
                                 <p class="font-color fuenteTexto">
                                     You must match the color of the platforms to be able to advance and pass the level!
                                 </p>
-                                <!-- Botones debajo del texto -->
                                 <a href="https://gitlab.com/LucilaRomeo/colorshift" class="btn btn-primary boton">
                                     <img src="Imagenes/gitLab.png" alt="Icono"
                                         style="width: 20px; height: 20px; margin-right: 10px;">
@@ -80,19 +76,17 @@
                     <!-- Slide 2 -->
                     <div class="carousel-item zPosition">
                         <div class="row align-items-center">
-
-                            <div class="col-md-6 text-center">
+                            <div class="col-12 col-md-6 text-center">
                                 <img src="Imagenes/CoffeMix.gif" alt="GIF 2" class="gif-responsive">
                             </div>
-
-                            <div class="col-md-5 text-container">
+                            <div class="col-12 col-md-5 text-container">
                                 <h3 class="font-color fuenteTitulo">Coffe Mix</h3>
                                 <p class="fuenteTexto font-color">
                                     In this game, you must ensure that Rita can make and drink all her coffees on time
                                     in order to win.
                                     Don't make any mistakes—for Rita's sake!
                                 </p>
-                                <p class="fuenteTexto font-color" style="font-size: 10px;">(Developed with other
+                                <p class="fuenteTexto font-color" style="font-size: 0.8rem;">(Developed with other
                                     developers)</p>
                                 <a href="https://gitlab.com/Giuknow/coffee-mix" class="btn btn-primary boton">
                                     <img src="Imagenes/gitLab.png" alt="Icono"
@@ -102,7 +96,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 3
+                </div>
+                <!-- Slide 3
                     <div class="carousel-item zPosition">
                         <div class="row align-items-center">
                           
@@ -122,22 +117,18 @@
                 </div> -->
 
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
 
         <div class="container" id="skills">
             <h2 class="center-container font-color fuenteTitulo">Skills</h2>
@@ -170,16 +161,15 @@
                 </a>
             </div>
         </div>
-
         <div class=" footer">
             <footer class="text-center py-3">
                 <p class="mt-2 font-color fuenteTexto">Desarrollado por Lucila Romeo</p>
                 <p class="mt-2 font-color fuenteTexto">Icons by Icons8</p>
-              
             </footer>
-
-
         </div>
+
+
+
         <div class="gradient-background"></div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
