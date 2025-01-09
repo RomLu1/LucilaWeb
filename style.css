@@ -161,16 +161,5 @@ font-family: "Oswald", serif;
     .btn-nbg {
         flex: 0 0 25%; /* Para que haya 4 iconos por fila */
     }
-    
-    /* Si la pantalla es más pequeña, acomodamos los iconos en una sola columna */
-    @media (max-width: 480px) {
-        .btn-nbg {
-            flex: 0 0 50%; /* Para 2 iconos por fila */
-        }
 
-        .btn-nbg img {
-            width: 50px; /* Aumentamos un poco el tamaño de los iconos */
-            height: 50px;
-        }
-    }
 }
